@@ -1,0 +1,135 @@
+@media screen and (max-width: 1430px) {
+  .nav-one {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .nav-div {
+    margin: 0 0;
+  }
+  input[type="search"] {
+    width: 150px;
+  }
+  #delteAll {
+    width: 2%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .nav-two {
+    display: none;
+  }
+  .nav-one {
+    display: flex;
+    justify-content: space-between;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .post-container {
+    width: 50%;
+    height: 400px;
+  }
+  #post-text {
+    margin-top: 50px;
+    margin-left: 27px;
+    border-color: black;
+    height: 280px;
+  }
+  .flex-btn {
+    width: 90%;
+  }
+  #post-result {
+    width: 50%;
+    height: 400px;
+  }
+  #result-list {
+    margin-top: 15px;
+  }
+  .icon-end a img {
+    margin: 0 20px;
+  }
+}
+@media screen and (max-width: 940px) {
+  .flex-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 2px auto;
+  }
+  .post-container {
+    height: 455px;
+  }
+  #post-text {
+    margin-top: 50px;
+    margin-left: 17px;
+    border-color: black;
+    height: 280px;
+  }
+  .icon-end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 0;
+  }
+  input[type="color"] {
+    margin-left: 20px;
+    cursor: pointer;
+    margin-top: 6px;
+    width: 75px;
+  }
+  .post-btn {
+    width: 130px;
+    margin-left: 16px;
+    padding: 5px;
+    margin-top: 8px;
+    border-radius: 6px;
+    background-color: var(--two);
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .appendli {
+    list-style: none;
+    padding: 10px;
+    height: 100px;
+    background-color: var(--one);
+    margin-top: 4px;
+    display: block;
+  }
+  h4 {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .post-container {
+    width: 75%;
+    margin-left: 0%;
+  }
+  #post-result {
+    width: 75%;
+    margin-left: 0%;
+  }
+  #delteAll {
+    width: 4%;
+  }
+  .flex-btn {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: 2px auto;
+  }
+  .buttons {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .liButton {
+    margin-left: 6px;
+    width: 65px;
+    height: 30px;
+  }
+}

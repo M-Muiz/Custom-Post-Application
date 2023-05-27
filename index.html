@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="style/media.css" />
+  </head>
+
+  <body>
+    <div class="nav">
+      <div class="nav-one">
+        <img src="style/logo/2.png" alt="" />
+        <div class="nav-div">
+          <input type="search" />
+          <button class="hover">Search</button>
+        </div>
+      </div>
+      <div class="nav-two">
+        <ul>
+          <li class="icon"><img src="style/icons/home.svg" alt="" /></li>
+          <li class="icon"><img src="style/icons/user.svg" alt="" /></li>
+          <li class="icon"><img src="style/icons/phone-call.svg" alt="" /></li>
+          <li class="icon"><img src="style/icons/portrait.svg" alt="" /></li>
+          <li class="icon">
+            <img src="style/icons/video-camera-alt.svg" alt="" />
+          </li>
+          <li class="icon"><img src="style/icons/settings.svg" alt="" /></li>
+          <h2>Web<span>Post</span>Application</h2>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flex">
+      <div class="post-container">
+        <textarea
+          id="post-text"
+          cols="30"
+          rows="10"
+          maxlength="47"
+          placeholder="Add a Post......"
+        ></textarea>
+        <div class="flex-btn">
+          <div class="buttons">
+            <button class="custom-btn" id="bold">B</button>
+            <button class="custom-btn" id="italic">I</button>
+            <button class="custom-btn" id="underline">U</button>
+          </div>
+          <div>
+            <input
+              id="color"
+              oninput="getColor()"
+              type="color"
+              value="#ffbc65"
+            />
+          </div>
+          <button class="post-btn" onclick="chkBeforeRun()">Add Post</button>
+        </div>
+      </div>
+
+      <div id="post-result">
+        <div id="delteAll" onclick="delteAll()">
+          <img src="style/icons/trash.svg" alt="" />
+        </div>
+        <ul id="result-list">
+          <div id="dateDetails">
+            <button class="detailClose">
+              <img src="style/icons/cross-small.svg" alt="" />
+            </button>
+            <h5 id="dateRow"></h5>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="icon-end">
+        <a href="https://github.com/M-Muiz" target="_blank"
+          ><img src="style/footer-icon/github.svg" alt=""
+        /></a>
+        <a href="#"><img src="style/footer-icon/facebook.svg" alt="" /></a>
+        <a href="#"><img src="style/footer-icon/instagram.svg" alt="" /></a>
+        <a href="#"><img src="style/footer-icon/skype.svg" alt="" /></a>
+      </div>
+    </div>
+
+    <script src="java/moment/local.js"></script>
+    <script src="java/index.js"></script>
+  </body>
+</html>

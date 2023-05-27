@@ -1,0 +1,281 @@
+@font-face {
+  font-family: custom;
+  src: url(font/Poppins-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --one: #eeeeee;
+  --two: #f2f5f5;
+  --main: #ffbc65;
+}
+body {
+  font-family: custom;
+  background-color: var(--two);
+}
+.icon {
+  width: 100%;
+}
+.icon img {
+  width: 25px;
+}
+.icon :hover {
+  background-color: #ffbc65;
+  cursor: pointer;
+}
+.nav {
+  background-color: var(--one);
+  display: flex;
+  justify-content: space-around;
+  height: 60px;
+}
+.nav-one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: 2px solid var(--main);
+  border-radius: 10px;
+}
+.nav-two {
+  width: 100%;
+  border: 2px solid #ffbc65;
+  display: flex;
+  align-items: center;
+  margin-left: 35px;
+  border-radius: 10px;
+}
+.nav-two ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav-two ul li {
+  list-style: none;
+  width: 90px;
+  text-align: center;
+  /* padding: 10px; */
+}
+.nav-one img {
+  width: 40px;
+  margin: 0 20px;
+  background: transparent;
+}
+.active {
+  color: white;
+  background-color: black;
+}
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+.underline {
+  text-decoration: underline;
+}
+.flex {
+  display: flex;
+}
+.flex-btn {
+  display: flex;
+  align-items: center;
+  width: 814px;
+  margin: 0 auto;
+}
+.post-container {
+  width: 46%;
+  height: 700px;
+  margin-left: 50px;
+  margin-top: 30px;
+  box-shadow: 0 0 20px;
+  border-radius: 6px;
+}
+#post-text {
+  width: 90%;
+  resize: none;
+  margin-top: 50px;
+  margin-left: 40px;
+  border-color: black;
+  height: 390px;
+  padding: 10px;
+  font-size: 3em;
+  box-shadow: 0 0 10px var(--main);
+}
+#post-text:active {
+  border-color: var(--main);
+}
+#post-result {
+  width: 46%;
+  height: 700px;
+  margin-left: 50px;
+  margin-top: 30px;
+  box-shadow: 0 0 20px;
+  border-radius: 6px;
+}
+#result-list {
+  width: 90%;
+  box-shadow: 0 0 10px var(--main);
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin-top: 32px;
+  height: 90%;
+  border-radius: 6px;
+  background-color: var(--two);
+}
+::-webkit-scrollbar {
+  width: 15px;
+  border: 1px solid var(--main);
+}
+::-webkit-scrollbar-track {
+  background: var(--one);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--main);
+  border-radius: 4px;
+}
+.nav-div {
+  margin: 0 50px;
+}
+input[type="search"] {
+  width: 300px;
+  padding: 5px;
+  background-color: var(--two);
+  border-radius: 6px;
+}
+button {
+  width: 80px;
+  padding: 5px;
+  border-radius: 6px;
+  background-color: var(--two);
+}
+button:hover {
+  cursor: pointer;
+}
+h2 {
+  padding: 10px;
+  letter-spacing: 1px;
+  font-size: 22px;
+}
+span {
+  padding: 10px;
+  font-weight: bold;
+}
+.hover:hover {
+  background-color: #ffbc65;
+  cursor: pointer;
+}
+.post-btn {
+  width: 130px;
+  margin-left: 40px;
+  padding: 5px;
+  border-radius: 6px;
+  background-color: var(--two);
+}
+.post-btn:hover {
+  background-color: #ffbc65;
+  cursor: pointer;
+}
+.custom-btn {
+  width: 40px;
+  cursor: pointer;
+  margin-left: 6px;
+}
+input[type="color"] {
+  margin-left: 20px;
+  cursor: pointer;
+  width: 75px;
+}
+.footer {
+  width: 93%;
+  height: 60px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px;
+  margin: 40px auto;
+}
+.appendli {
+  list-style: none;
+  padding: 10px;
+  background-color: var(--one);
+  margin-top: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.liButton {
+  margin-left: 20px;
+  width: 65px;
+  height: 30px;
+}
+.liButton:hover {
+  background-color: #ffbc65;
+  cursor: pointer;
+}
+.icon-end {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  margin: 0 380px;
+  background-color: var(--one);
+  box-shadow: 0 0 10px var(--main);
+}
+.icon-end a img {
+  width: 30px;
+}
+.icon-end a img:hover {
+  background-color: var(--main);
+}
+.detailButton {
+  width: 30px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+.detailButton:hover {
+  background-color: #ffbc65;
+  cursor: pointer;
+}
+#dateDetails {
+  display: none;
+  width: 200px;
+  overflow-y: scroll;
+  height: 112px;
+  margin: 0 auto;
+  border-radius: 4px;
+  border: 2px solid black;
+}
+.detailClose {
+  width: 30px;
+  border: none;
+  float: right;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+.detailClose :hover {
+  background-color: #ffbc65;
+}
+.detailClose img {
+  width: 100%;
+}
+#delteAll {
+  position: absolute;
+  width: 35px;
+  margin-top: 7px;
+  cursor: pointer;
+}
+#delteAll:hover {
+  background-color: #ffbc65;
+}
+#delteAll img {
+  width: 100%;
+}
+#dateRow {
+  margin-top: 25px;
+  margin-left: 15px;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
